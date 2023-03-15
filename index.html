@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>KnoWord</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec059f65fb.js" crossorigin="anonymous"></script>
+</head>
+  
+<body>
+    <div id="root">
+        <div class="title"><b>Knoword</b></div>
+
+            <button class="bttn" onclick="start()">Start</button>
+
+            <div id="timerlimit" style="margin-top: 4%;">
+                <div class="timeDiv"><i>Select Your Time Limit in Seconds</i></div>
+                <div class="timesel">
+                    <button class="tim" onclick="incTime(-30)"> <i class="fa-solid fa-angles-left"></i> </button>
+                    <b id="dis1">30</b>
+                    <button class="tim" onclick="incTime(30)"> <i class="fa-solid fa-angles-right"></i> </button>
+                </div>
+            </div>
+
+            <div id="leveltype" style="margin-top: 5%;">
+                <div class="timeDiv"><i>Select Hard Level</i></div>
+                <div class="timesel" style="height: 75px;">
+                    <button class="tim" onclick="level()"> <i class="fa-solid fa-angles-left"></i> </button>
+                    <b id="dis2"> Easy </b>
+                    <button class="tim" onclick="level()"> <i class="fa-solid fa-angles-right"></i> </button>
+                </div>
+            </div>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+  
+</html>
